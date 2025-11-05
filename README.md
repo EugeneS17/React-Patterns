@@ -1,0 +1,1 @@
+# Practice Task 3.2.3: React Patterns/Sosnovskiy_Eugene

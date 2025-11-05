@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.error {
+  text-align: center;
+  margin-top: 50px;
+}
+
