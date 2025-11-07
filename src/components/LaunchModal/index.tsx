@@ -2,6 +2,7 @@ import { Image, Text, Button } from '@mantine/core';
 import { Portal } from '../Portal';
 import { Launch } from '../../types/launch';
 import styles from './index.module.css';
+import { useLockScroll } from '../../hooks/useLockScroll';
 
 interface LaunchModalProps {
   launch: Launch;
@@ -9,6 +10,8 @@ interface LaunchModalProps {
 }
 
 export const LaunchModal = ({ launch, onClose }: LaunchModalProps) => {
+  useLockScroll();
+
   return (
     <Portal>
       <div className={styles.overlay} onClick={onClose} data-testid="modal-overlay">
